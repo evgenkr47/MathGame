@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
     
     <data>
         <variable
@@ -13,7 +14,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+
+    android:background="@drawable/gradient_background"
     tools:context=".presentation.GameFinishedFragment"
     >
 
@@ -35,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:textColor="@color/black"
         app:requiredAnswers="@{gameResult.gameSettings.minCountOfRightAnswer}"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/tv_score_answers"
@@ -51,6 +54,7 @@
         android:layout_height="wrap_content"
         app:scoreAnswers="@{gameResult.countOfRightAnswers}"
         android:textSize="18sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/tv_required_percentage"
         app:layout_constraintEnd_toEndOf="@id/tv_required_answers"
         app:layout_constraintStart_toStartOf="@id/tv_required_answers"
@@ -65,6 +69,7 @@
         android:layout_marginTop="16dp"
         app:requiredPercentage="@{gameResult.gameSettings.minPercentOfRightAnswer}"
         android:textSize="18sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/tv_score_percentage"
         app:layout_constraintEnd_toEndOf="@id/tv_required_answers"
         app:layout_constraintStart_toStartOf="@id/tv_required_answers"
@@ -80,6 +85,7 @@
         android:layout_marginTop="16dp"
         app:scorePercentage="@{gameResult}"
         android:textSize="18sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/tv_required_answers"
         app:layout_constraintStart_toStartOf="@id/tv_required_answers"
@@ -92,6 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/retry"
+        android:backgroundTint="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradient_background"
     tools:context=".presentation.ChooseLevelFragment"
     >
 
@@ -14,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:textColor="@color/black"
         android:text="@string/choose_level_title"
         android:textSize="24sp"
         android:textStyle="bold"
